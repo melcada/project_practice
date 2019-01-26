@@ -47,4 +47,84 @@ another_vector
 str(another_vector)
 str(my_vector)
 
-str(cats)
+#loooking at specific valules within cat
+cats[1]
+cats$coat
+cats[[1]]
+cats["coat"]
+cats[1, 1]
+cats[,1]
+cats[1,]
+
+#initiate new variable age
+age <- c(2,3,5)
+age
+cbind(cats, age)
+
+#realized this gave me an error
+#age <-c(2,3,5,12)
+#age
+#cbind(cats, age)
+
+nrow(cats)
+length(age)
+newRow <- list("tortoiseshell",3.3, TRUE, 9)
+cats <- rbind(cats, newRow)
+cats
+
+levels(cats$coat)
+levels(cats$coat) <-c(levels(cats$coat), "tortoiseshell")
+cats <- rbind(cats, list("tortoiseshell",3.3, TRUE, 9))
+
+#remove row
+cats[-4, ] #display with removal fof 4th row
+cats[4,] #display only 4th row
+na.omit(cats)
+cats <- cats[-4, ]
+
+#remove column
+cats[, -4]
+drop <- names(cats) %in% c("age")
+drop
+cats[,!drop]
+
+cats <- rbind(cats,cats)
+cats
+rownames(cats) <- NULL
+cats
+
+
+df <- data.frame(First_name = c("Melanie"),
+                 last_name = c("Adams"),
+                 lucky_number = c(12),
+                 stringsAsFactors = FALSE)
+
+df <- rbind(df, list("Marie", "Curie", 238) )
+coffee <- c(FALSE,TRUE)
+df <-cbind(df,coffee)
+df
+
+
+gapminder <- read.csv("data/gapminder_data.csv")
+str(gapminder)
+
+typeof(gapminder$year)
+str(gapminder$country)
+
+length(gapminder)
+typeof(gapminder)
+
+nrow(gapminder)
+ncol(gapminder)
+dim(gapminder)
+colnames(gapminder)
+
+#preview top of dataset
+head(gapminder)
+tail(gapminder)
+
+head(gapminder, n=100)
+sample(gapminder)
+
+#find random sample within gapminder dataset
+gapminder[sample(nrow(gapminder), 5), ]
