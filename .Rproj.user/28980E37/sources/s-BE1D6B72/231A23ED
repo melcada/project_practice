@@ -2,22 +2,22 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1548525427644.000,
-    "dirty" : true,
-    "encoding" : "",
+    "dirty" : false,
+    "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "129815428",
     "id" : "231A23ED",
-    "lastKnownWriteTime" : 0,
+    "lastKnownWriteTime" : 1548528499,
     "last_content_update" : -2147483648,
-    "path" : null,
-    "project_path" : null,
+    "path" : "C:/Users/adamsm/Desktop/my_project/my_project.Rproj",
+    "project_path" : "my_project.Rproj",
     "properties" : {
-        "cursorPosition" : "3,0",
+        "cursorPosition" : "3,16",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
     "relative_order" : 1,
     "source_on_save" : false,
     "source_window" : "",
-    "type" : "r_source"
+    "type" : "text"
 }
